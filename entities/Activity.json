@@ -1,0 +1,44 @@
+{
+  "name": "Activity",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User who performed activity"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Name of user"
+    },
+    "activity_type": {
+      "type": "string",
+      "enum": [
+        "read_chapter",
+        "added_manga",
+        "rated_manga",
+        "commented"
+      ],
+      "description": "Type of activity"
+    },
+    "manga_id": {
+      "type": "string",
+      "description": "Related manga ID"
+    },
+    "manga_title": {
+      "type": "string",
+      "description": "Manga title for display"
+    },
+    "manga_cover": {
+      "type": "string",
+      "description": "Manga cover URL"
+    },
+    "details": {
+      "type": "string",
+      "description": "Additional activity details"
+    }
+  },
+  "required": [
+    "user_email",
+    "activity_type"
+  ]
+}
