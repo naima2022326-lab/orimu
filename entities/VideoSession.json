@@ -1,0 +1,50 @@
+{
+  "name": "VideoSession",
+  "type": "object",
+  "properties": {
+    "host_email": {
+      "type": "string",
+      "description": "Email of session host"
+    },
+    "host_name": {
+      "type": "string",
+      "description": "Name of host"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of participant emails"
+    },
+    "manga_id": {
+      "type": "string",
+      "description": "Manga being read together"
+    },
+    "manga_title": {
+      "type": "string",
+      "description": "Manga title"
+    },
+    "current_chapter": {
+      "type": "number",
+      "description": "Current chapter number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "ended"
+      ],
+      "default": "active",
+      "description": "Session status"
+    },
+    "room_id": {
+      "type": "string",
+      "description": "Unique room identifier"
+    }
+  },
+  "required": [
+    "host_email",
+    "room_id"
+  ]
+}
