@@ -1,0 +1,43 @@
+{
+  "name": "OfflineChapter",
+  "type": "object",
+  "properties": {
+    "manga_id": {
+      "type": "string",
+      "description": "Reference to manga"
+    },
+    "manga_title": {
+      "type": "string",
+      "description": "Manga title for display"
+    },
+    "chapter_number": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "chapter_id": {
+      "type": "string",
+      "description": "External chapter ID"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of page image URLs"
+    },
+    "downloaded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When downloaded"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source of manga"
+    }
+  },
+  "required": [
+    "manga_id",
+    "chapter_number",
+    "pages"
+  ]
+}
