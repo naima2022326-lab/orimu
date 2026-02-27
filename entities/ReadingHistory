@@ -1,0 +1,31 @@
+{
+  "name": "ReadingHistory",
+  "type": "object",
+  "properties": {
+    "manga_id": {
+      "type": "string",
+      "description": "Reference to the manga"
+    },
+    "manga_title": {
+      "type": "string",
+      "description": "Title of the manga for quick display"
+    },
+    "manga_cover": {
+      "type": "string",
+      "description": "Cover URL for quick display"
+    },
+    "chapter_number": {
+      "type": "number",
+      "description": "Chapter number that was read"
+    },
+    "read_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the chapter was read"
+    }
+  },
+  "required": [
+    "manga_id",
+    "chapter_number"
+  ]
+}
