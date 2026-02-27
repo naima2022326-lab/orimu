@@ -1,0 +1,30 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "manga_id": {
+      "type": "string",
+      "description": "Reference to the manga"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Comment text"
+    },
+    "rating": {
+      "type": "number",
+      "description": "User rating out of 10"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Name of user who commented"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of user who commented"
+    }
+  },
+  "required": [
+    "manga_id",
+    "comment"
+  ]
+}
