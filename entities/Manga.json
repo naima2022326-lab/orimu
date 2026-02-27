@@ -1,0 +1,90 @@
+{
+  "name": "Manga",
+  "type": "object",
+  "properties": {
+    "external_id": {
+      "type": "string",
+      "description": "ID from external source"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source: mangadex, myanimelist, etc."
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the manga"
+    },
+    "cover_url": {
+      "type": "string",
+      "description": "URL to the manga cover image"
+    },
+    "description": {
+      "type": "string",
+      "description": "Synopsis or description of the manga"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author of the manga"
+    },
+    "artist": {
+      "type": "string",
+      "description": "Artist of the manga"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ongoing",
+        "completed",
+        "hiatus",
+        "cancelled"
+      ],
+      "default": "ongoing",
+      "description": "Publication status"
+    },
+    "genres": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of genres"
+    },
+    "in_library": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the manga is in the user's library"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "reading",
+        "plan_to_read",
+        "completed",
+        "on_hold",
+        "dropped",
+        "uncategorized"
+      ],
+      "default": "uncategorized",
+      "description": "Library category"
+    },
+    "total_chapters": {
+      "type": "number",
+      "description": "Total number of chapters available"
+    },
+    "last_read_chapter": {
+      "type": "number",
+      "default": 0,
+      "description": "Last chapter the user read"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Average rating (out of 10)"
+    },
+    "year": {
+      "type": "number",
+      "description": "Year of release"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
