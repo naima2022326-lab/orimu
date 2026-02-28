@@ -3,8 +3,7 @@ import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
-import { User, LogOut, Bell, Shield, BookOpen, Info, Eye, EyeOff, Palette } from 'lucide-react';
+import { User, LogOut, Bell, Shield, BookOpen, Info } from 'lucide-react';
 
 export default function Settings() {
   const [user, setUser] = useState(null);
