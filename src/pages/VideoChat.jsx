@@ -215,8 +215,8 @@ export default function VideoChat() {
         </div>
       </div>
 
-      <style jsx>{`
-        .mirror {
+      <style>{`
+      .mirror {
           transform: scaleX(-1);
         }
       `}</style>
