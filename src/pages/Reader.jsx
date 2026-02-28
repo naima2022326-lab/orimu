@@ -4,7 +4,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link, useNavigate } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ChevronLeft, ChevronRight, Maximize, Minimize, BookOpen, Loader2 } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, Maximize, Minimize, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import DownloadButton from '../components/reader/DownloadButton';
 
