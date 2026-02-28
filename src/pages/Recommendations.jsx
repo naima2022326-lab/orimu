@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
 import { Sparkles, Loader2, RefreshCw, TrendingUp } from 'lucide-react';
-import MangaCard from '../components/library/MangaCard';
 import { toast } from 'sonner';
 
 export default function Recommendations() {
