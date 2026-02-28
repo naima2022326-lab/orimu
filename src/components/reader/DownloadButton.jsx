@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { base44 } from '@/api/base44Client';
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
 import { Button } from '@/components/ui/button';
-import { Download, Check, Loader2, Trash2 } from 'lucide-react';
+import { Download, Check, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function DownloadButton({ manga, chapterNumber, chapterId }) {
